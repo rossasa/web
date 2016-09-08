@@ -27,7 +27,7 @@ addon | version | summary
 [web_clean_navbar](web_clean_navbar/) | 8.0.1.0.0 | Better visibility for the backend's main menu
 [web_context_in_colors](web_context_in_colors/) | 8.0.1.1.0 | Use the context in a tree view's colors and fonts attribute
 [web_dashboard_open_action](web_dashboard_open_action/) | 8.0.1.0.0 | Adds a button to open a dashboard in full mode
-[web_dashboard_tile](web_dashboard_tile/) | 8.0.1.0.0 | Add Tiles to Dashboard
+[web_dashboard_tile](web_dashboard_tile/) | 8.0.1.1.0 | Add Tiles to Dashboard
 [web_dialog_size](web_dialog_size/) | 8.0.0.1.0 | A module that lets the user expand a dialog box to the full screen width.
 [web_dom_model_classes](web_dom_model_classes/) | 8.0.1.0.0 | Allows small UI changes with simple CSS
 [web_easy_switch_company](web_easy_switch_company/) | 8.0.1.0.0 | Multicompany - Easy Switch Company
@@ -35,10 +35,12 @@ addon | version | summary
 [web_export_view](web_export_view/) | 8.0.1.2.0 | Export Current View
 [web_favicon](web_favicon/) | 8.0.1.0.0 | Allows to set a custom shortcut icon (aka favicon)
 [web_graph_improved](web_graph_improved/) | 8.0.0.1.0 | Improves graph views.
+[web_graph_sort](web_graph_sort/) | 8.0.1.0.0 | Web Graph Sort
 [web_group_expand](web_group_expand/) | 8.0.1.0.0 | Group Expand Buttons
 [web_hide_db_manager_link](web_hide_db_manager_link/) | 8.0.1.0.0 | Hide link to database manager in login screen
 [web_hideleftmenu](web_hideleftmenu/) | 8.0.1.0.0 | Hide Left Menu in Web Interface
 [web_ir_actions_act_window_message](web_ir_actions_act_window_message/) | 8.0.1.0.0 | Show a message box to users
+[web_ir_actions_act_window_none](web_ir_actions_act_window_none/) | 8.0.1.0.0 | Execute nothing
 [web_ir_actions_act_window_page](web_ir_actions_act_window_page/) | 8.0.1.0.0 | Allows a developer to trigger a pager to show the previous or next next record in the form view
 [web_last_viewed_records](web_last_viewed_records/) | 8.0.1.0.0 | Last viewed records
 [web_listview_custom_element_number](web_listview_custom_element_number/) | 8.0.1.0.0 | Allow users to set manually a quantity of items to display in a tree view
@@ -68,7 +70,7 @@ addon | version | summary
 [web_widget_digitized_signature](web_widget_digitized_signature/) | 8.0.1.0.0 | Web Widget Digitized Signature
 [web_widget_digitized_signature_user](web_widget_digitized_signature_user/) | 8.0.1.0.0 | Web Digitized Signature for users
 [web_widget_float_formula](web_widget_float_formula/) | 8.0.1.0.0 | Web Widget - Formulas in Float fields
-[web_widget_image_download](web_widget_image_download/) | 8.0.1.0.0 | Allows to download the avatar for the contact
+[web_widget_image_download](web_widget_image_download/) | 8.0.1.0.1 | Allows to download any image from its widget
 [web_widget_mail_send_odoo](web_widget_mail_send_odoo/) | 8.0.1.0.0 | Send mail using internal composition wizard.
 [web_widget_many2many_tags_multi_selection](web_widget_many2many_tags_multi_selection/) | 8.0.0.1.0 | Tags multiple selection
 [web_widget_one2many_tags](web_widget_one2many_tags/) | 8.0.1.0.0 | Provides a widget similar to many2many_tags for one2many fields
