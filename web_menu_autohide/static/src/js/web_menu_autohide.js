@@ -29,7 +29,7 @@ openerp.web_menu_autohide = function(instance)
         leftbar_hide_timeout_id: null,
         main_menu_hide_timeout_id: null,
         navbar_query: '#oe_main_menu_navbar',
-        leftbar_query: '.oe_leftbar',
+        leftbar_query: '.oe_leftbars',
         start: function()
         {
             var self = this,
@@ -79,8 +79,9 @@ openerp.web_menu_autohide = function(instance)
                             'z-index': 1110,
                             width: 'auto',
                         });
-                    jQuery('.openerp .oe_leftbar > div')
-                        .css('width', 'auto');
+                    /*comentar para nao mecher barra lateral*/
+                    /*jQuery('.openerp .oe_leftbar > div')
+                        .css('width', 'auto');*/
                 }
                 if(self.hide_delay_navbar || self.hide_delay_leftbar)
                 {
