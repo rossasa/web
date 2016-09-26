@@ -43,6 +43,7 @@ class WebShortcut(models.Model):
         for shortcut in shortcuts.filtered('menu_id'):
             _name = shortcut.menu_id.name_get()
             _name = _name[0][1] if len(_name) else ''
+            _name = _name.split('/')[-1]
             _id = shortcut.menu_id.id
             res.append(
                 {
