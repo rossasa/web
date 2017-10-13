@@ -107,6 +107,7 @@ openerp.web_tree_many2one_clickable = function(instance, local)
                         res_model: jQuery(this).data('many2one-clickable-model'),
                         res_id: jQuery(this).data('many2one-clickable-id'),
                         views: [[false, 'form']],
+                        target: 'new',
                     });
                 });
             return result;

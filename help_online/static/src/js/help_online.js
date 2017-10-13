@@ -20,7 +20,7 @@ openerp.help_online = function (instance) {
             });
         },
     });
-    
+
     openerp.web.TreeView.include({
         view_loading: function(r) {
             var ret = this._super(r);
@@ -30,7 +30,17 @@ openerp.help_online = function (instance) {
             return ret
         },
     });
-    
+
+    instance.web_graph.GraphView.include({
+        view_loading: function(r) {
+            var ret = this._super(r);
+            if(! _.isUndefined(this.ViewManager.load_help_buttons)){
+                this.ViewManager.load_help_buttons();
+            }
+            return ret
+        },
+    });
+
     openerp.web.ListView.include({
         view_loading: function(r) {
             var ret = this._super(r);
@@ -40,7 +50,7 @@ openerp.help_online = function (instance) {
             return ret
         },
     });
-    
+
     instance.web_kanban.KanbanView.include({
         view_loading: function(r) {
             var ret = this._super(r);
@@ -50,7 +60,7 @@ openerp.help_online = function (instance) {
             return ret
         },
     });
-    
+
     openerp.web.FormView.include({
         view_loading: function(r) {
             var ret = this._super(r);
@@ -59,7 +69,7 @@ openerp.help_online = function (instance) {
             }
             return ret
         },
-        
+
         do_show: function (options){
             var ret = this._super(options);
             if(! _.isUndefined(this.ViewManager.load_help_buttons)){
@@ -73,9 +83,9 @@ openerp.help_online = function (instance) {
         clean_help_buttons:function() {
             this.$el.find("div.oe_help_online_buttons").first().remove();
         },
-        
+
         load_help_buttons:function() {
-            var self = this;	
+            var self = this;
             this.rpc('/help_online/build_url',  {model: this.dataset.model, view_type: this.active_view}).then(function(result) {
                 self.clean_help_buttons();
                 if (result && ! _.isEmpty(result)) {
@@ -102,7 +112,7 @@ openerp.help_online = function (instance) {
                                             {
                                                 id     : "formform",
                                                 // The location given in the link itself
-                                                action : evt.target.href, 
+                                                action : evt.target.href,
                                                 method : "GET",
                                                 // Open in new window/tab
                                                 target : evt.target.target

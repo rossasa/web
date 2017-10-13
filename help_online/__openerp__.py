@@ -30,6 +30,7 @@
         'website',
         'web',
         'web_kanban',
+        'web_graph',
     ],
     'description': """
 Help Online
